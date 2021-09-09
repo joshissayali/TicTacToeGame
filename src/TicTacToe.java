@@ -37,9 +37,6 @@ public class TicTacToe implements ActionListener
 		Title_panel.setBounds(0, 0, 800,100);
 		Title_panel.add(textfield);
 		
-		
-		
-		
 		for(int i=0;i<9;i++)
 		{
 			
@@ -49,15 +46,11 @@ public class TicTacToe implements ActionListener
 			buttons[i].setFocusable(false);
 			buttons[i].addActionListener(this);
 			
-			
 		}
-		
-		
 		
 		frame.add(Title_panel,BorderLayout.NORTH);
 		frame.add(button_panel);
 		FirstTurn();
-		
 		
 		
 		
@@ -94,7 +87,7 @@ public class TicTacToe implements ActionListener
 				}
 				
 			}
-			//b.addActionListener(this);
+			
 			
 		}
 		
@@ -202,7 +195,7 @@ public class TicTacToe implements ActionListener
 			buttons[i].setEnabled(false);
 		}
 	   
-		textfield.setText(" X wins.........congratulations!!!");
+		textfield.setText(" X wins");
 	}
 	public void Owins(int a,int b,int c)
 	{
@@ -215,7 +208,7 @@ public class TicTacToe implements ActionListener
 			buttons[i].setEnabled(false);
 		}
 	   
-		textfield.setText(" O wins.........congratulations!!!");
+		textfield.setText(" O wins");
 	}
 
 }
